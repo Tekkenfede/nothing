@@ -17,15 +17,15 @@
 #include "system/log.h"
 #include "system/lt.h"
 
-#define SCREEN_WIDTH 1280
-#define SCREEN_HEIGHT 960
+#define SCREEN_WIDTH 640
+#define SCREEN_HEIGHT 480
 
 static void print_usage(FILE *stream)
 {
     fprintf(stream, "Usage: nothing [--fps <fps>]\n");
 }
 
-static float current_display_scale = 3.0f;
+static float current_display_scale = 1.0f;
 
 
 // export this for other parts of the code to use.
