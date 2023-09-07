@@ -25,7 +25,7 @@ static void print_usage(FILE *stream)
     fprintf(stream, "Usage: nothing [--fps <fps>]\n");
 }
 
-static float current_display_scale = 0.7f;
+static float current_display_scale = 0.2f;
 
 
 // export this for other parts of the code to use.
