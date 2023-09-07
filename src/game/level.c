@@ -243,7 +243,6 @@ int level_event_idle(Level *level, const SDL_Event *event,
     switch (event->type) {
     case SDL_KEYDOWN:
         switch (event->key.keysym.sym) {
-        case SDLK_w:
         case SDLK_UP:
         case SDLK_SPACE: {
             player_jump(level->player);
@@ -258,12 +257,6 @@ int level_event_idle(Level *level, const SDL_Event *event,
         case SDLK_l: {
             camera_toggle_debug_mode(camera);
         } break;
-        }
-        break;
-
-    case SDL_JOYBUTTONDOWN:
-        if (event->jbutton.button == 1) {
-            player_jump(level->player);
         }
         break;
     }
