@@ -17,8 +17,8 @@
 #include "system/log.h"
 #include "system/lt.h"
 
-#define SCREEN_WIDTH 800
-#define SCREEN_HEIGHT 600
+#define SCREEN_WIDTH 640
+#define SCREEN_HEIGHT 480
 
 static void print_usage(FILE *stream)
 {
