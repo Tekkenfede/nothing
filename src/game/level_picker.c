@@ -55,7 +55,7 @@ void level_picker_populate(LevelPicker *level_picker,
 
     level_picker->wiggly_text = (WigglyText) {
         .text = "Select Level",
-        .scale = {10.0f, 10.0f},
+        .scale = {5.0f, 5.0f},
         .color = COLOR_WHITE,
     };
 }
