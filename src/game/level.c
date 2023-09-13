@@ -319,10 +319,6 @@ int level_input(Level *level,
         player_move_left(level->player);
     } else if (keyboard_state[SDL_SCANCODE_D] || keyboard_state[SDL_SCANCODE_RIGHT]) {
         player_move_right(level->player);
-    } else if (the_stick_of_joy && SDL_JoystickGetAxis(the_stick_of_joy, 0) < -JOYSTICK_THRESHOLD) {
-        player_move_left(level->player);
-    } else if (the_stick_of_joy && SDL_JoystickGetAxis(the_stick_of_joy, 0) > JOYSTICK_THRESHOLD) {
-        player_move_right(level->player);
     } else {
         player_stop(level->player);
     }
